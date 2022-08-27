@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Baklava</title>
+  </head>
+  <style>
+    body {
+      background: #fdfdfe;
+    }
+    h1 {
+      text-align: center;
+      line-height: 40px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 26px;
+      line-height: 40px;
+    }
+    img {
+      display: block;
+      margin: 0px auto;
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    a {
+      font-size: 18px;
+      line-height: 35px;
+      color: black;
+      transition: all 200ms ease-in-out;
+    }
+    a:hover {
+      color: white;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 20px 40px;
+      line-height: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #639f23;
+      border-radius: 10px;
+      border-color: transparent;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+      background: white;
+      color: #639f23;
+      border: 1px solid transparent;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 10px auto;
+      padding: 15px 50px;
+      background: radial-gradient(
+        circle at 10% 20%,
+        rgb(85, 149, 27) 0.1%,
+        rgb(183, 219, 87) 90%
+      );
+      box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    .footer {
+      text-align: center;
+      font-family: monospace;
+      font-size: 14px;
+      opacity: 0.7;
+      line-height: 35px;
+      margin: 40px 0px 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>I love Easten sweets</h1>
+      <hr />
+      <h2>Especially Baklava</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/573/original/shutterstock_1222454869-1-1140x570.jpg?1653760728"
+        alt="Delicious Baklava"
+      />
+      <p>
+        <strong>Baklava</strong> is a popular sweet pastry in Turkish and Greek
+        cuisine. It consists of ground and finely chopped walnuts or pistachios
+        between sheets of filo pastry, soaked in a sugary solution of honey,
+        sugar, spices and rosewater and cut into small squares.
+      </p>
+      <p>
+        <strong>Baklava</strong> is a simple delicious dessert. Made with paper
+        thin phyllo dough that has been buttered and layered in a rectangular
+        baking dish. Layer several sheets of phyllo (about 6 or 7) and top with
+        a mixture of ground nuts and a little sugar and cinnamon. Walnuts or
+        pistachios are used most often sometimes with a combination of almonds,
+        and pecans. After layering of nut mixture is completed, top with
+        remaining buttered phyllo, score with sharp knife and bake. When taken
+        from the oven pour on the syrup (equal parts sugar and water boiled to a
+        syrup consistency and then mixed with honey cinnamon and cloves). Cut
+        into triangles, squares or diamonds and serve. Stays fresh a good while.
+        Freezes well.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Baklava" target="_blank"
+        >Learn more on Wikipedia</a
+      >
+      <button>Try and Enjoy 😋</button>
+      <p class="footer">This page was built by Anna Kaduk</p>
+    </div>
+  </body>
+  <script>
+    function contact() {
+      let name = prompt("What is your name?");
+      let email = prompt("What is your email address?");
+      let emoji = prompt("What is your favorite emoji?");
+
+      alert(
+        "Hi, " +
+          name +
+          "! We'll be in touch by email, meanwhile have lot of Baklava! " +
+          emoji
+      );
+    }
+
+    let buyButton = document.querySelector("button");
+    buyButton.addEventListener("click", contact);
+  </script>
+</html>
